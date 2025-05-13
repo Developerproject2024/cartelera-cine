@@ -1,5 +1,4 @@
 import { Module } from '@nestjs/common';
-import { SalasModule } from './salas/salas.module';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { CategoriasModule } from './categorias/categorias.module';
 import { PeliculasModule } from './peliculas/peliculas.module';
@@ -32,7 +31,6 @@ import * as Joi from 'joi';
       autoLoadModels: true,
       synchronize: true,
     }),    
-    SalasModule,
     CategoriasModule,
     PeliculasModule,
     FuncionesModule,
