@@ -6,7 +6,7 @@ import {
   ForeignKey,
   BelongsTo,
 } from 'sequelize-typescript';
-import { Funcion } from 'src/funciones/model/funciones.model';
+import { Funcion } from '../../funciones/model/funciones.model';
 
 @Table({ tableName: 'boletas' })
 export class Boleta extends Model<Boleta> {

@@ -7,8 +7,8 @@ import {
   BelongsTo,
   HasMany,
 } from 'sequelize-typescript';
-import { Boleta } from 'src/boletas/model/boletas.model';
-import { Pelicula } from 'src/peliculas/model/peliculas.model';
+import { Boleta } from '../../boletas/model/boletas.model';
+import { Pelicula } from '../../peliculas/model/peliculas.model';
 
 @Table({ tableName: 'funciones' })
 export class Funcion extends Model<Funcion> {

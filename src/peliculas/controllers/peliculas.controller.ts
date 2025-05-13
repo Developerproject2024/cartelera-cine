@@ -5,10 +5,6 @@ import { PeliculasService } from '../services/peliculas.service';
 export class PeliculasController {
   constructor(private readonly peliculasService: PeliculasService) {}
 
-  // @Post()
-  // create(@Body() pelicula: Partial<Pelicula>) {
-  //   return this.peliculasService.create(pelicula);
-  // }
   @Post()
   public importarDesdeTMDB  () {
     return this.peliculasService.importarPopularesDesdeTMDB();
@@ -18,6 +14,5 @@ export class PeliculasController {
   public findAll() {
     return this.peliculasService.findAll();
   }
-
 
 }

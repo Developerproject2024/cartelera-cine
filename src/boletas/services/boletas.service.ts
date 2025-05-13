@@ -1,12 +1,12 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 import { Boleta } from '../model/boletas.model';
-import { Funcion } from 'src/funciones/model/funciones.model';
+import { Funcion } from '../../funciones/model/funciones.model';
 
 @Injectable()
 export class BoletasService {
-  constructor(@InjectModel(Boleta) private boletaModel: typeof Boleta,
-              @InjectModel(Funcion) private funcionModel: typeof Funcion
+  constructor(@InjectModel(Boleta) private readonly boletaModel: typeof Boleta,
+              @InjectModel(Funcion) private readonly funcionModel: typeof Funcion
             ) {}
   
 

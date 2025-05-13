@@ -1,5 +1,5 @@
 import { Table, Column, Model, DataType, HasMany } from 'sequelize-typescript';
-import { Pelicula } from 'src/peliculas/model/peliculas.model';
+import { Pelicula } from '../../peliculas/model/peliculas.model';
 
 @Table({ tableName: 'categorias' })
 export class Categorias extends Model<Categorias> {

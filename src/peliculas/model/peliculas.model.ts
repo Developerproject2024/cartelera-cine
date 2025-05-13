@@ -8,7 +8,7 @@ import {
   HasMany,
 } from 'sequelize-typescript';
 import { Categorias } from '../../categorias/model/categorias.model';
-import { Funcion } from 'src/funciones/model/funciones.model';
+import { Funcion } from '../../funciones/model/funciones.model';
 
 @Table({ tableName: 'peliculas' })
 export class Pelicula extends Model<Pelicula> {

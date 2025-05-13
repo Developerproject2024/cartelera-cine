@@ -1,6 +1,4 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { SalasModule } from './salas/salas.module';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { CategoriasModule } from './categorias/categorias.module';
@@ -39,8 +37,8 @@ import * as Joi from 'joi';
     PeliculasModule,
     FuncionesModule,
     BoletasModule],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
   
 })
 export class AppModule {}
