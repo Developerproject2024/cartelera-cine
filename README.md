@@ -42,8 +42,7 @@ API_URL
 API_KEY
 ```
 
-
-## Rutas disponibles
+## 📡 Rutas disponibles
 ```bash
 POST /funciones: Crear una nueva función en el sistema.
 
