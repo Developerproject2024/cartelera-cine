@@ -22,3 +22,41 @@ cd proyecto-salas-cine
 
 # Instalar dependencias
 npm install
+
+## Para ejecutar el proyecto en modo de desarrollo, usa el siguiente comando:
+```bash
+docker-compose up --build
+
+## Configura el archivo .env
+
+```bash
+PORT
+DB_HOST
+DB_PORT
+DB_USER
+DB_PASSWORD
+DB_NAME
+API_URL
+API_KEY
+
+
+## Rutas disponibles
+```bash
+POST /funciones: Crear una nueva función en el sistema.
+
+GET /funciones: Obtener todas las funciones.
+
+GET /funciones/:id/disponibilidad: Consultar la disponibilidad de una función por su ID.
+
+POST /peliculas: Importar películas populares desde TMDB.
+
+GET /peliculas: Obtener todas las películas.
+
+## Pruebas
+
+```bash
+npm run test
+
+## Para ejecutar las pruebas con cobertura, usa:
+```bash
+npm run test:cov
